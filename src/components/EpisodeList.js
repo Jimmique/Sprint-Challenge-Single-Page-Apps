@@ -14,11 +14,11 @@ import EpisodeCard from './EpisodeCard.js';
       .catch( err => {
         console.log(err);
       });
-  }, [props.match.params.path]);
+  }, [props.match.path]);
 
    return (
     <section className="episode-list grid-view">
-      { episodeList.forEach( episode => {
+      { episodeList.map( episode => {
         return <EpisodeCard key={episode.id} {...episode} />
       })}
     </section>
