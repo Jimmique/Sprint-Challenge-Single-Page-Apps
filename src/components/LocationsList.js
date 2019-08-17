@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import LocationCard from "./LocationCard.js";
-​
+
 export default function LocationsList(props) {
     const [ locationList, setLocationList ] = useState([]);
 

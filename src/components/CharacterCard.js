@@ -2,8 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Card, Icon, Image } from "semantic-ui-react";
 
-
-	export default function CharacterCard({ character }) {
+export default function CharacterCard({ character }) {
   return (
     <Card>
       <Image src={character.image} alt={character.name} wrapped ui={false}/>
